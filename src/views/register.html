@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/af39a75437.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/images/logo.svg" class="logo">
+            <input type="text" placeholder="Buscar productos, marcas" class="search">
+            <h2 class="copy-header">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+
+        <a href="#" class="hamburguer-button">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+
+            <ul class="right-navbar">
+                <li><a href="http://localhost:3000/register">Creá tu cuenta<i class="fa-regular fa-address-card"></i></a></li>
+                <li><a href="http://localhost:3000/login">Ingresá<i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="">Mis compras<i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+        
+    </header> 
+    
+    <main id="main-form">
+        
+    <form action="/home" method="post">
+        
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+
+            <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required>
+        
+            <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required>
+        
+            <label for="fecha-nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" required>
+        
+            <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
+       
+            <label for="perfil-usuario">Perfil de usuario</label>
+        <div>
+            <input type="radio" name="perfil-usuario" value="comprador"> 
+            <label for="comprador">Comprador</label>
+    
+            <input type="radio" name="perfil-usuario" value="vendedor"> 
+            <label for="vendedor">Vendedor</label>
+        </div>
+            <label for="intereses">Intereses</label>
+        <div>
+            <input type="checkbox" name="intereses" value="electro">
+            <label for="electro">Electro</label>
+        </div>
+        <div>
+            <input type="checkbox" name="intereses" value="moda">
+            <label for="moda">Moda</label>
+        </div>
+        <div>
+            <input type="checkbox" name="intereses" value="hogar">
+            <label for="hogar">Hogar</label>
+        </div>
+        <div>
+            <input type="checkbox" name="intereses" value="jugueteria">
+            <label for="jugueteria">Juguetería</label>
+        </div>
+        <div>
+            <input type="checkbox" name="intereses" value="vida-sana">
+            <label for="vida-sana">Vida Sana</label>
+        </div>
+            <label for="foto-usuario">Foto de usuario</label>
+        
+            <input type="file" name="foto-usuario" id="foto-usuario" accept=".jpg, .png, .jpeg">
+        
+            <input type="password" name="password" id="password" placeholder="Contraseña" required>
+      
+            <input type="password" name="confirmar-password" id="confirmar-password" placeholder="Confirmar contraseña" required>
+        <div>
+            <button type="submit" class="boton-formulario">Enviar</button>
+            <button type="reset" class="boton-formulario">Borrar</button>
+        </div>
+    </form>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <i class="fa-solid fa-credit-card"></i>
+            <h3>Pagá con tarjeta o en efectivo</h3>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
+        <div class="footer-section">
+            <i class="fa-solid fa-gift"></i>
+            <h3>Envío gratis desde $2.500</h3>
+            <p>Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </div>
+        <div class="footer-section">
+            <i class="fa-solid fa-user-shield"></i>
+            <h3>Seguridad, de principio a fin</h3>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+        </div>
+        <div class="footer-section">
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
